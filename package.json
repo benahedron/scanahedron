@@ -1,0 +1,26 @@
+{
+  "name": "scanahedron",
+  "version": "0.1.1",
+  "description": "Easy image scan interface for node.",
+  "license": "MIT",
+  "scripts": {
+    "test": "./test.sh",
+    "install": "./build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benahedron/scanahedron"
+  },
+  "keywords": [
+    "scanner",
+    "scan",
+    "images",
+    "node",
+    "sane"
+  ],
+  "author": "benahedron",
+  "dependencies": {
+    "cmake-js": "^3.6.2",
+    "nan": "^2.10.0"
+  }
+}
