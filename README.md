@@ -5,6 +5,26 @@ Easy image scanning module for node.
 
 Scanahedron scans images with minimal effort, but still allows for a flexible configuration.
 
+## Installation:
+
+```
+npm install scanahedron --save
+```
+
+See development notes below for further details on the build process & dependencies.
+
+#### Electron
+If you'd like to use this module with electron, you either can enforce to build with the same node version as the electron module was built. To do so simply add the flag "-v <node_version>" to cmake-js. I.e.:
+```
+cmake-js -v 8.7.0
+```
+
+Or you can rebuild your electron version to match your current node version, before your npm install this package:
+```
+npm install electron-rebuild -g
+electron-rebuild -p
+```
+
 ## Usage
 Scan to file with the default scanner:
 ```
@@ -70,6 +90,7 @@ To build in debug:
 cmake-js -D
 ```
 
+
 ### Testing
 GTest & Gmock are required for the unit tests.
 Hence install the following package (apt install):
@@ -107,3 +128,4 @@ sudo cp *.a /usr/lib
 The project uses the FindSane.cmake file from [here](https://github.com/rose-compiler/rose/blob/master/cmake/modules/FindSane.cmake).
 
 ### Licensing
+[MIT](LICENSE.md)
