@@ -20,7 +20,7 @@
   ],
   "author": "benahedron",
   "dependencies": {
-    "cmake-js": "^3.6.2",
+    "cmake-js": "^4.0.1",
     "nan": "^2.10.0"
   }
 }
